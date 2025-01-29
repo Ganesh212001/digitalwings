@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Poppins } from "next/font/google"
 import "./globals.css";
 
@@ -11,7 +10,7 @@ const font = Poppins(
 )
 
 export const metadata: Metadata = {
-  title: "Code And Click",
+  title: "Code And Click | Digital Marketing Agency",
   description: "Code and Click is a basically digital marketing website",
 };
 
