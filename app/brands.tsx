@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Lora } from 'next/font/google'
 import { cn } from '@/lib/utils'
+import Link from 'next/link';
 
 const font = Lora({
     subsets: ['latin'],
@@ -56,21 +57,23 @@ const Brands = () => {
                     }
                 </div>
                 <div className={cn("flex items-center justify-center text-xl xl:text-2xl pt-10 md:pt-0 pb-4 px-8 text-center text-white", font.className)}>
-                    "We got rid of nearly a dozen diffrent tools because of what Bird does for us."
+                    "We got rid of nearly a dozen diffrent tools because of what Code and Click does for us."
                 </div>
-                <div className="items-center flex justify-center flex-col text-white">
-                    <Image
-                        src="/images/logo.svg"
-                        alt='logo'
-                        width={1000}
-                        height={1000}
-                        className='pt-2 xl:pt-0 w-10 xl:w-14'
-                    />
-                    <div className="text-center">
-                        <div className="text-sm font-medium mt-4">Ganesh Mahajan</div>
-                        <div className="text-sm">Marketing Director, Palium Software</div>
+                <Link href="https://profile-ganesh.vercel.app" target='_blank'>
+                    <div className="items-center flex justify-center flex-col text-white">
+                        <Image
+                            src="/images/logo.png"
+                            alt='logo'
+                            width={1000}
+                            height={1000}
+                            className='pt-2 xl:pt-0 w-10 xl:w-14'
+                        />
+                        <div className="text-center">
+                            <div className="text-sm font-medium mt-4">Ganesh Mahajan</div>
+                            <div className="text-sm">Founder Of Code and Click</div>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     )
